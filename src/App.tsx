@@ -3,7 +3,7 @@ import React from "react";
 import Gallery from "./components/Gallery";
 import Topbar from "./components/Topbar";
 import { ChakraProvider } from "@chakra-ui/react";
-import DateLiz from "./components/Date";
+import DressingCode from "./components/DressingCode";
 import DayCounter from "./components/DayCounter";
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
         <Topbar />
         <DayCounter />
         <Gallery />
-        <DateLiz />
+        <DressingCode />
       </div>
     </ChakraProvider>
   );

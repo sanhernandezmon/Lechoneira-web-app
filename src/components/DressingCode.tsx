@@ -1,7 +1,6 @@
 // components/DayCounter.tsx
 
-import { Grid, GridItem } from "@chakra-ui/react"
-import { Image  } from "@chakra-ui/react";
+import { Grid, GridItem, Image } from "@chakra-ui/react"
 
 const images = [
   `${process.env.PUBLIC_URL}/vestido1.jpg`,
@@ -11,9 +10,7 @@ const images = [
 ];
 
 
-const DateLiz = () => {
-  const weddingDate = new Date("2025-05-24T00:00:00-05:00");
-
+const DressingCode = () => {
 
   return (
 
@@ -40,4 +37,4 @@ const DateLiz = () => {
   );
 };
 
-export default DateLiz;
+export default DressingCode;
