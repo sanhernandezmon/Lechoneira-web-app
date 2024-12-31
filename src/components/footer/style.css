@@ -45,15 +45,25 @@
     top: 0;
   }
   
-  .site-footer h2 {
+  .site-footer h1 {
     font-size: 40px;
-    color: #eae8e8;
+    color: white;
     margin: 0 0 0.3em;
     display: inline-block;
     position: relative;
     z-index: 2;
     font-family: 'Great Vibes', cursive;
   }
+
+  .site-footer h2 {
+    font-size: 30px;
+    color: white;
+    margin: 0 0 0.3em;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    font-family: 'Great Vibes', cursive;
+  }  
   
   @media (max-width: 767px) {
     .site-footer h2 {

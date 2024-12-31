@@ -2,9 +2,22 @@
 
 
 
-h1,h2,h3{
+h1{
   font-family: 'Great Vibes', cursive;
+  color:white;
+  font-weight:bold
 }
+
+h2{
+  font-family: 'Great Vibes', cursive;
+  color:white
+}
+
+h3{
+  font-family: 'Great Vibes', cursive;
+  color:white
+}
+
 body{
   font-family: 'Muli', sans-serif;
 }
