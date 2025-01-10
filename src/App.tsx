@@ -6,11 +6,14 @@ import { ChakraProvider } from "@chakra-ui/react";
 import DressingCode from "./components/DressingCode/index";
 import DayCounter from "./components/DayCounter";
 import Navbar from "./components/Navbar";
+import Couple from "./components/couple";
+import Story from "./components/story";
 import './App.css';
 import './css/font-awesome.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HeroMain from "./components/HeroMain";
 import Footer from "./components/footer";
+import Saveday from "./components/countdown";
 
 
 const App = () => {
@@ -21,8 +24,10 @@ const App = () => {
         <Navbar />
         <h1>Carrusel</h1>
         <HeroMain />
-        <h1>Cuenta atras</h1>
-        <DayCounter />   
+        <h1>Pareja</h1>
+        <Couple />   
+        <h1>Story</h1>
+        <Story />   
         <h1>Pie de página</h1>
         <Footer />           
 
