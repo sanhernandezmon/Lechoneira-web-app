@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Box, Text } from "@chakra-ui/react";
 import { Colors } from "../consts/colors";
 
-const weddingDate = new Date("2025-05-24"); // Replace with your wedding date
+const weddingDate = new Date("2025-05-24T00:00:00-05:00"); // Replace with your wedding date
 
 const DayCounter = () => {
   const [daysLeft, setDaysLeft] = useState(0);
