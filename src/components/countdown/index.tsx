@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect } from "react";
+import React, { useState } from "react";
 import './style.css';
 
 const CountdownTimer = ({ targetDate }: { targetDate: string }) => {
@@ -12,18 +12,14 @@ const CountdownTimer = ({ targetDate }: { targetDate: string }) => {
         seconds: Math.floor((difference / 1000) % 60),
       };
     }
-    return null; // Si la fecha ya pasó, retorna null
+    return null;
   };
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
-
-    return () => clearInterval(timer); // Limpia el intervalo al desmontar el componente
-  }, [targetDate, calculateTimeLeft]);
+  setInterval(() => {
+    setTimeLeft(calculateTimeLeft());
+  }, 1000);
 
   if (!timeLeft) {
     return <div>¡El tiempo ha terminado!</div>;
