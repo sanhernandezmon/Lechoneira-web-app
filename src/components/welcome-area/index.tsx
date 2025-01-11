@@ -36,7 +36,8 @@ const Welcome: React.FC<WelcomeProps> = (props) => {
                             <ModalHeader toggle={toggle}>Location</ModalHeader>
                                 <ModalBody>
                                     <div className="location-map">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.0726494504192!2d-73.95837492432331!3d5.091955338140122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e406eb9a7f8ae39%3A0x550abfb55b1aaa8e!2sIglesia%20La%20Plazuela%20maria%20auxiliadora!5e0!3m2!1ses!2sco!4v1736525551577!5m2!1ses!2sco" />                                </div>
+                                      <iframe title="locationFrame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.0726494504192!2d-73.95837492432331!3d5.091955338140122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e406eb9a7f8ae39%3A0x550abfb55b1aaa8e!2sIglesia%20La%20Plazuela%20maria%20auxiliadora!5e0!3m2!1ses!2sco!4v1736525551577!5m2!1ses!2sco" />
+                                    </div>
                                 </ModalBody>
                         </Modal>
                     </div>
