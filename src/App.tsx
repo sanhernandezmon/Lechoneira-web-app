@@ -9,20 +9,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import HeroMain from "./components/HeroMain";
 import Footer from "./components/footer";
 import Saveday from "./components/countdown";
-
+import Gallery from "./components/gallery";
+import People from "./components/people";
 
 const App = () => {
   return (
     <ChakraProvider>
       <div>
-        <Navbar />
+      <Navbar />
         <HeroMain />
         <Saveday />
         <Couple />   
         <Story />   
+        <Gallery />   
+        <People />           
         <Welcome welcome={'s2'}/>
         <Footer />           
-
       </div>
     </ChakraProvider>
   );
