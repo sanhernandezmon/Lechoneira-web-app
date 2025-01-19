@@ -4,7 +4,7 @@ import './style.css'
 
 const un_mensaje = "El destino nos unió y ahora estamos juntos para siempre. Así somos.";
 const images = [
-    `${process.env.PUBLIC_URL}/couple/santi.jpg`,
+    `${process.env.PUBLIC_URL}/couple/lina.jpg`,
     `${process.env.PUBLIC_URL}/couple/santi.jpg`,
   ];
 const Couple = () => {
