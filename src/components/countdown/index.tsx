@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './style.css';
+import Sectiontitle from "../section-title";
 
 const CountdownTimer = ({ targetDate }: { targetDate: string }) => {
   const calculateTimeLeft = () => {
@@ -27,7 +28,7 @@ const CountdownTimer = ({ targetDate }: { targetDate: string }) => {
 
   return (
     <div>
-      <h1>Cuenta atrás</h1>
+      <Sectiontitle mensaje={"Esperando el gran día"} />
       <div>
         {timeLeft.days} días {timeLeft.hours} horas {timeLeft.minutes} minutos{" "}
         {timeLeft.seconds} segundos
