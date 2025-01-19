@@ -1,13 +1,13 @@
 import React from "react";
 import Sectiontitle from "../section-title";
-import bride1 from "../../images/groomsmen-bridesmaid/1.jpg";
+import bride1 from "../../images/groomsmen-bridesmaid/tania.jpg";
 import bride2 from "../../images/groomsmen-bridesmaid/lorena.jpg";
 import bride3 from "../../images/groomsmen-bridesmaid/maleja.jpg";
-import bride4 from "../../images/groomsmen-bridesmaid/4.jpg";
+import bride4 from "../../images/groomsmen-bridesmaid/aleja.jpg";
 import bride5 from "../../images/groomsmen-bridesmaid/5.jpg";
 import bride6 from "../../images/groomsmen-bridesmaid/6.jpg";
 import bride7 from "../../images/groomsmen-bridesmaid/7.jpg";
-import bride8 from "../../images/groomsmen-bridesmaid/8.jpg";
+import bride8 from "../../images/groomsmen-bridesmaid/sebas.jpg";
 
 import "./style.css";
 
@@ -72,8 +72,8 @@ const People = () => {
                       <img src={bride5} alt="bride" />
                     </div>
                     <div className="groomsmen-bridesmaid-content">
-                      <h4>Criys stone</h4>
-                      <span>Made Of Honor</span>
+                      <h4>Sebastian Chacon</h4>
+                      <span>Padrino</span>
                     </div>
                   </div>
                 </div>
@@ -83,8 +83,8 @@ const People = () => {
                       <img src={bride6} alt="bride" />
                     </div>
                     <div className="groomsmen-bridesmaid-content">
-                      <h4>Watson Lyn</h4>
-                      <span>best-friend</span>
+                      <h4>felipe prieto</h4>
+                      <span>Best-man</span>
                     </div>
                   </div>
                 </div>
@@ -94,8 +94,8 @@ const People = () => {
                       <img src={bride7} alt="bride" />
                     </div>
                     <div className="groomsmen-bridesmaid-content">
-                      <h4>Chris Fletcher</h4>
-                      <span>Friend</span>
+                      <h4>Federico Hernández</h4>
+                      <span>Hermano del novio</span>
                     </div>
                   </div>
                 </div>
@@ -105,8 +105,8 @@ const People = () => {
                       <img src={bride8} alt="bride" />
                     </div>
                     <div className="groomsmen-bridesmaid-content">
-                      <h4>John Clyne</h4>
-                      <span>Friend</span>
+                      <h4>Sebastian Silva</h4>
+                      <span>Hermano de la novia</span>
                     </div>
                   </div>
                 </div>
