@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import 'react-fancybox/lib/fancybox.css'
 import Sectiontitle from '../section-title'
 import './style.css'
