@@ -5,12 +5,6 @@ import iglesia from '../../images/iglesia.png'
 import Sectiontitle from '../section-title'
 
 
-
-interface WelcomeProps {
-  className?: string;
-  welcome?: string;
-}
-
 const IglesiaSize = {
   width: '300px',
   height: '200px',
@@ -23,11 +17,8 @@ const MapaSize = {
 
 const un_mensaje = "Celebremos juntos";
 
-const Welcome: React.FC<WelcomeProps> = (props) => {
-  const {
-    className
-  } = props;
-  
+const Welcome = () => {
+    
   return (
                     <div className="location-map">
                     <Sectiontitle mensaje={un_mensaje}/>                      

@@ -22,7 +22,7 @@ const App = () => {
         <Story />
         <Gallery />
         <People />
-        <Welcome welcome={"s2"} />
+        <Welcome/>
         <Footer />
       </div>
     </ChakraProvider>
