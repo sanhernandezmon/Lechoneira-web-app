@@ -1,7 +1,6 @@
 
 import React  from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 import iglesia from '../../images/iglesia.png'
 import Sectiontitle from '../section-title'
 
