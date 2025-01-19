@@ -4,7 +4,7 @@ import bride1 from "../../images/groomsmen-bridesmaid/tania.jpg";
 import bride2 from "../../images/groomsmen-bridesmaid/lorena.jpg";
 import bride3 from "../../images/groomsmen-bridesmaid/maleja.jpg";
 import bride4 from "../../images/groomsmen-bridesmaid/aleja.jpg";
-import bride5 from "../../images/groomsmen-bridesmaid/5.jpg";
+import bride5 from "../../images/groomsmen-bridesmaid/pipe.jpg";
 import bride6 from "../../images/groomsmen-bridesmaid/6.jpg";
 import bride7 from "../../images/groomsmen-bridesmaid/7.jpg";
 import bride8 from "../../images/groomsmen-bridesmaid/sebas.jpg";
@@ -83,7 +83,7 @@ const People = () => {
                       <img src={bride6} alt="bride" />
                     </div>
                     <div className="groomsmen-bridesmaid-content">
-                      <h4>felipe prieto</h4>
+                      <h4>Felipe prieto</h4>
                       <span>Best-man</span>
                     </div>
                   </div>
