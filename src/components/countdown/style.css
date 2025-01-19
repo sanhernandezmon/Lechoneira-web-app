@@ -21,13 +21,14 @@
 }
 
 .saveday.s2 .react-countdown li {
+    padding-top: 30px;
     background: url(../../images/vector2.png);
     background-size: cover;
     background-position: center center;
 }
 
 .react-countdown li:after {
- display: none;
+    display: none;
 }
 .react-countdown .text {
     text-transform: uppercase;

@@ -3,7 +3,10 @@ import Sectiontitle from '../section-title'
 import './style.css'
 
 const un_mensaje = "El destino nos unió y ahora estamos juntos para siempre. Así somos.";
-
+const images = [
+    `${process.env.PUBLIC_URL}/couple/santi.jpg`,
+    `${process.env.PUBLIC_URL}/couple/santi.jpg`,
+  ];
 const Couple = () => {
     return(
         <div id="couple" className={"about-wrap"}>
@@ -15,7 +18,7 @@ const Couple = () => {
                             <div className="col-lg-6 col-md-6 col-sm-12 couple-single">
                                 <div className="couple-wrap couple-wrap-2">
                                     <div className="couple-img">
-                                        <img src="img-2.jpg" alt="Lina"/>
+                                        <img src={images[0]} alt="Lina"/>
                                     </div>
                                     <div className="couple-text">
                                         <div className="couple-content">
@@ -28,12 +31,12 @@ const Couple = () => {
                             <div className="col-lg-6 col-md-6 col-sm-12 couple-single">
                                 <div className="couple-wrap couple-wrap-3">
                                 <div className="couple-img">
-                                <img src="santi.jpg" alt="Santi"/>
+                                <img src={images[1]} alt="Santi"/>
                                     </div>
                                     <div className="couple-text">
                                         <div className="couple-content">
                                             <h3>Santiago</h3>
-                                            <p>Hola, soy Santi. Ingeniero de sistemas super pilo y hermoso y precioso</p>
+                                            <p>Hola, soy Santi.</p>
                                         </div>
                                     </div>
                                 </div>
