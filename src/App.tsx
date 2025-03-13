@@ -13,7 +13,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<DashBoardPage />} />
-          <Route path="/Lechoneira-web-app/" element={<Navigate to="/" />} />
+          <Route path="/Lechoneira-web-app" element={<Navigate to="/" />} />
           <Route path="/inventario" element={<InventaryPage />} />
           <Route path="/ventas" element={<SellsPage />} />
         </Routes>
