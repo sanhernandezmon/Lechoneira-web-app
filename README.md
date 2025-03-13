@@ -11,7 +11,7 @@ Chakra UI: A simple, modular, and accessible component library for React.
 ## 🚀 Getting Started
 
 ### To run this project locally, follow these steps:
-
+ 
 - Clone the repository:
 
 ```bash
