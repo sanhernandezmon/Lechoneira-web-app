@@ -3,7 +3,7 @@
 }
 .countdownwrap {
     text-align: center;
-    padding: 40px;
+    padding-top: 180px;
     margin: auto;
     position: relative;
     overflow: hidden;
@@ -21,7 +21,7 @@
 }
 
 .saveday.s2 .react-countdown li {
-    padding-top: 30px;
+    padding-top: 80px;
     background: url(../../images/vector2.png);
     background-size: cover;
     background-position: center center;

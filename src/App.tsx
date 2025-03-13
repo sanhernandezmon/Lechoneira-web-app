@@ -1,30 +1,23 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
-import Couple from "./components/couple";
-import Story from "./components/story";
-import Welcome from "./components/welcome-area";
 import "./App.css";
 import "./css/font-awesome.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Footer from "./components/footer";
-import Saveday from "./components/countdown";
-import Gallery from "./components/gallery";
-import People from "./components/people";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import DashBoardPage from "./pages/DashboardPage";
+import InventaryPage from "./pages/InventaryPage";
+import SellsPage from "./pages/SellsPage";
 
 const App = () => {
   return (
     <ChakraProvider>
-      <div>
-        <Navbar />
-        {/*<HeroMain />*/}
-        <Saveday />
-        <Couple />
-        <Story />
-        <Gallery />
-        <People />
-        <Welcome/>
-        <Footer />
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<DashBoardPage />} />
+          <Route path="/inventario" element={<InventaryPage />} />
+          <Route path="/ventas" element={<SellsPage />} />
+        </Routes>
+      </BrowserRouter>
     </ChakraProvider>
   );
 };

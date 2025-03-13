@@ -1,45 +1,52 @@
 import { useState } from 'react'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Collapse, CardBody, Card } from 'reactstrap';
 import './style.css';
 import { Link } from 'react-scroll';
+import { useNavigate } from 'react-router-dom';
+import { Paths } from '../../domains/Paths';
+import { Locals } from '../../domains/Locals';
 
 const MobileMenu  = () => {
     const [isMenuShow, setIsMenuShow] = useState(false);
-    const [isOpen, setIsOpen] = useState(false);
     const menuHandler = () => {
         setIsMenuShow(!isMenuShow)
     }
+    const [isOpen, setIsOpen] = useState(false);
+
     const setNotIsOpen = () => {
         setIsOpen(!isOpen);
+    }
+    const navigate = useNavigate();
+    const handleNavigate = (route: string) => {
+        console.log(route)
+        setIsMenuShow(false)
+        navigate(route)
+    }
+    const handleChangeLocation = (local: Locals) => {
+        setIsMenuShow(false)
+        console.log(local)
     }
     return (
         <div>
             <div className={`mobileMenu ${isMenuShow ? 'show' : ''}`}>
                 <div className="logo2">
-                    <h2><Link to='/home'>Santiago y Lina</Link></h2>
+                    <h2>Lechoneira</h2>
                 </div>
+                
                 <ul className="responsivemenu">
-                    <li><p onClick={() => setNotIsOpen()}>Home<i className="fa fa-angle-right" aria-hidden="true"></i></p></li>
+                <li>
+                    <p onClick={() => setNotIsOpen()}>{"Locations "} <i className="fa fa-angle-right" aria-hidden="true"></i></p>
+                </li>
                     <Collapse isOpen={isOpen}>
                         <Card>
                             <CardBody>
-                                <li><Link to='/home'>Home style 1</Link></li>
-                                <li><Link to='/home2'>Home style 2</Link></li>
-                                <li><Link to='/home3'>Home style 3</Link></li>
-                                <li><Link to='/home4'>Home style 4</Link></li>
-                                <li><Link to='/home5'>Home video</Link></li>
+                                <li onClick={() => handleChangeLocation(Locals.LOCAL_15)}>Cra 15</li>
+                                <li onClick={() => handleChangeLocation(Locals.LOCAL_16)}>Cra 16</li>
                             </CardBody>
                         </Card>
                     </Collapse>
-                    <li><AnchorLink href='#couple'>Couple</AnchorLink></li>
-                    <li><AnchorLink href='#story'>Story</AnchorLink></li>
-                    <li><AnchorLink href='#people'>People</AnchorLink></li>
-                    <li><AnchorLink href='#event'>Events</AnchorLink></li>
-                    <li><AnchorLink href='#gallery'>Gallery</AnchorLink></li>
-                    <li><AnchorLink  href='#rsvp'>Rsvp</AnchorLink></li>
-                    <li><Link to='/blog'>Blog</Link></li>
-                    <li><Link to='/Blog-details'>Blog Details</Link></li>
+                    <li onClick={() => handleNavigate(Paths.INVENTARY)}>Inventario</li>
+                    <li onClick={() => handleNavigate(Paths.SELLS)}>Ventas</li>
                 </ul>
                 
             </div>

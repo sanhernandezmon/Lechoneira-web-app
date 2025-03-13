@@ -1,6 +1,6 @@
-## 💍 Wedding Website
+## Lechoneira web app
 
-This is a personal project thrilled to share our journey with you as we prepare for our special day. This website is designed to provide you with all the information you need about our wedding, including details about the venue, schedule, gallery, and more.
+This project is a web interface that manages inventary and sales for Lechoneir restaurant
 
 ## 📦 Technologies Used
 
@@ -15,8 +15,8 @@ Chakra UI: A simple, modular, and accessible component library for React.
 - Clone the repository:
 
 ```bash
-git clone https://github.com/sanhernandezmon/MarriageWebSite.git
-cd MarriageWebSite
+git clone https://github.com/Lechoneira/Lechoneira-web-app.git
+cd Lechoneira-web-app
 ```
 
 - Install the dependencies:
