@@ -15,7 +15,7 @@ Chakra UI: A simple, modular, and accessible component library for React.
 - Clone the repository:
 
 ```bash
-git clone https://github.com/Lechoneira/Lechoneira-web-app.git
+git clone https://github.com/sanhernandezmon/Lechoneira-web-app.git
 cd Lechoneira-web-app
 ```
 
