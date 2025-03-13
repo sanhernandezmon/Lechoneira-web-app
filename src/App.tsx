@@ -1,5 +1,4 @@
 import { ChakraProvider } from "@chakra-ui/react";
-import Navbar from "./components/Navbar";
 import "./App.css";
 import "./css/font-awesome.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";

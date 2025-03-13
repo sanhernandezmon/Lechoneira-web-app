@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { Collapse, CardBody, Card } from 'reactstrap';
 import './style.css';
-import { Link } from 'react-scroll';
 import { useNavigate } from 'react-router-dom';
 import { Paths } from '../../domains/Paths';
 import { Locals } from '../../domains/Locals';
