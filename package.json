@@ -2,7 +2,7 @@
   "name": "our-wedding",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sanhernandezmon.github.io/Lechoneira-web-app/",
+  "homepage": "https://lechoneira.github.io/Lechoneira-web-app",
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
     "@chakra-ui/react": "^2.8.2",
