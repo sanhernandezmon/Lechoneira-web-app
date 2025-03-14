@@ -1,7 +1,8 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import "./InventaryPage.css";
 
-const  InventaryPage = () =>  {
+const InventaryPage = () =>{
   return (
     <div>
         <Navbar />
