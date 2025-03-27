@@ -111,6 +111,27 @@ const Rental = (props: Props) => {
     }
   };
 
+  const fetchRentals = async () => {
+    try {
+      const url =
+        phoneFilter && phoneFilter.length === 10
+          ? `https://project-lecho-neira.onrender.com/rental/${phoneFilter}`
+          : "https://project-lecho-neira.onrender.com/rental";
+
+      const response = await axios.get(url, {
+        headers: { Authorization: `Bearer ${props.token}` },
+      });
+
+      if (response.status === 200) {
+        setRentals(response.data);
+      } else {
+        console.error("Failed to fetch rentals:", response.statusText);
+      }
+    } catch (error) {
+      console.error("Error fetching rentals:", error);
+    }
+  };
+
   const handleEdit = (rental: any) => {
     setIsEditMode(true);
     setEditingRentalId(rental._id);
@@ -141,28 +162,8 @@ const Rental = (props: Props) => {
   };
 
   useEffect(() => {
-    const fetchRentals = async () => {
-        try {
-          const url =
-            phoneFilter && phoneFilter.length === 10
-              ? `https://project-lecho-neira.onrender.com/rental/${phoneFilter}`
-              : "https://project-lecho-neira.onrender.com/rental";
-    
-          const response = await axios.get(url, {
-            headers: { Authorization: `Bearer ${props.token}` },
-          });
-    
-          if (response.status === 200) {
-            setRentals(response.data);
-          } else {
-            console.error("Failed to fetch rentals:", response.statusText);
-          }
-        } catch (error) {
-          console.error("Error fetching rentals:", error);
-        }
-      };
     fetchRentals();
-  }, [phoneFilter]);
+  }, [phoneFilter, fetchRentals]);
 
   return (
     <div>
