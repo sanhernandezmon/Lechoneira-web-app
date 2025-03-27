@@ -7,30 +7,31 @@ const DashBoardPage = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [token, setToken] = useState("");
 
-  const getHealth = async () => {
-    try {
-      const response = await axios.get("https://project-lecho-neira.onrender.com");
-      if (response.status === 200) {
-        const tokenResponse = await axios.post(
-          "https://project-lecho-neira.onrender.com/generate-token",{},
-          {
-            headers: {
-              "x-apikey": "lechoneira",
-            },
-          }
-        );
-        if (tokenResponse.status === 201) {
-          tokenResponse.data && setToken(tokenResponse.data.token);
-          setIsLoading(false);
-        }
-      }
-    } catch (error) {
-      console.error("Error fetching data, retrying in 5 seconds:", error);
-      setTimeout(getHealth, 5000);
-    }
-  };
+  
 
   useEffect(() => {
+    const getHealth = async () => {
+      try {
+        const response = await axios.get("https://project-lecho-neira.onrender.com");
+        if (response.status === 200) {
+          const tokenResponse = await axios.post(
+            "https://project-lecho-neira.onrender.com/generate-token",{},
+            {
+              headers: {
+                "x-apikey": "lechoneira",
+              },
+            }
+          );
+          if (tokenResponse.status === 201) {
+            tokenResponse.data && setToken(tokenResponse.data.token);
+            setIsLoading(false);
+          }
+        }
+      } catch (error) {
+        console.error("Error fetching data, retrying in 5 seconds:", error);
+        setTimeout(getHealth, 5000);
+      }
+    };
     getHealth();
   }, []);
 
