@@ -163,7 +163,7 @@ const Rental = (props: Props) => {
 
   useEffect(() => {
     fetchRentals();
-  }, [phoneFilter, fetchRentals]);
+  }, [phoneFilter]);
 
   return (
     <div>
