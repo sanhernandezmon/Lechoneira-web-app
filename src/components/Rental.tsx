@@ -57,14 +57,6 @@ const Rental = (props: Props) => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!errors.nombre && !errors.telefono && !errors.bandejas) {
-      if (formData.telefono.length !== 10) {
-        setErrors((prev) => ({
-          ...prev,
-          telefono: "Telefono must be exactly 10 digits.",
-        }));
-        return;
-      }
-
       const payload = {
         name: formData.nombre,
         phone: formData.telefono,
