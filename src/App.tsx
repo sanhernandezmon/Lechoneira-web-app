@@ -4,8 +4,6 @@ import "./css/font-awesome.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import DashBoardPage from "./pages/DashboardPage";
-import InventaryPage from "./pages/InventaryPage";
-import SellsPage from "./pages/SellsPage";
 
 const App = () => {
   return (

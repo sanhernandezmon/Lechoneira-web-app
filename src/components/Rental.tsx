@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
 import axios from "axios";
-import { FaPencilAlt } from "react-icons/fa";
 
 type Props = {
   token: string;
